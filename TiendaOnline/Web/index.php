@@ -1,5 +1,8 @@
 <?php
-	session_start();
+
+if(!session_id()) {
+        session_start();
+}
 ?>
 
 
@@ -144,7 +147,7 @@
     
     
     
-    <!-- div que muestra las opciones  de la opción principal elegida de la web -->
+    <!-- div que muestra las opciones  de la opci?n principal elegida de la web -->
     
     <div id="divSubMenu">  
     <!-- InstanceBeginEditable name="regionEditDivSubMenu" -->		 

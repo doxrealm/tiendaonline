@@ -501,7 +501,7 @@ function detalle_carrito(listaDeEmbutidos, i, j, k)
 
 //	ENVIA COMPRA A SERVIDOR	
 //*************************************************************************************************************************************************************
-solicitar_compra()
+function solicitar_compra()
 {
 	iniciar();
 	

@@ -4,20 +4,7 @@
 //  ENVIAR EMAIL
 //*******************************************************************************************************************************
 
-
-$conexion = mysqli_connect("127.0.0.1", "root");
-
-mysqli_select_db($conexion, "tiendaonline");
-
-
-
-// Comprueba la conexión. Si falla lanza un mensaje de aviso
-//**************************************************************************
-if(!$conexion)
-{
-	echo "Error de conexión a la Base de Datos: ". mysqli_connect_error();
-}
-//**************************************************************************
+include('config_db.php');
 
 
 
