@@ -5,7 +5,7 @@
 //*******************************************************************************************************************************
 
 
-$conexion = mysqli_connect("127.0.0.1", "root");
+$conexion = mysqli_connect("localhost", "root");
 
 mysqli_select_db($conexion, "tiendaonline");
 

@@ -95,7 +95,7 @@ function enviar_datos(nick, pas, nif, nombre, apellidos, provincia, municipio, c
 			
 	http_request.onreadystatechange = recibe_respuesta_alta;
 			
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/alta_clientes.php", true);
+	http_request.open("POST", "../PHP/alta_clientes.php", true);
 			
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 			
@@ -142,7 +142,7 @@ function enviar_email()
 		
 		http_request.onreadystatechange = respuesta_enviar;
 		
-		http_request.open("POST", "http://localhost/TiendaOnline/PHP/enviar_email.php", true);
+		http_request.open("POST", "../PHP/enviar_email.php", true);
 		
 		http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		
@@ -203,7 +203,7 @@ function borrar_cliente()
 				
 				http_request.onreadystatechange = respuesta_baja;
 				
-				http_request.open("POST", "http://localhost/TiendaOnline/PHP/borrar_clientes.php", true);
+				http_request.open("POST", "../PHP/borrar_clientes.php", true);
 				
 				http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				
@@ -253,7 +253,7 @@ function solicita_sesion()
 			
 			http_request.onreadystatechange = recibe_sesion;
 			
-			http_request.open("POST", "http://localhost/TiendaOnline/PHP/inicio_sesion.php", true);
+			http_request.open("POST", "../PHP/inicio_sesion.php", true);
 			
 			http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 			

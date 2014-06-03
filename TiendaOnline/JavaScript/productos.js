@@ -58,7 +58,7 @@ function solicitar_embutidos()
 	
 	http_request.onreadystatechange = recibe_embutidos;
 	
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/listaProductosXML.php", true);
+	http_request.open("POST", "../PHP/listaProductosXML.php", true);
 	
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	
@@ -120,7 +120,7 @@ function solicitar_tipos()
 	
 	http_request.onreadystatechange = recibe_tipos;
 	
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/listaProductosXML.php", true);
+	http_request.open("POST", "../PHP/listaProductosXML.php", true);
 	
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	
@@ -194,7 +194,7 @@ function solicitar_productos()
 
 	http_request.onreadystatechange = recibe_productos;
 	
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/listaProductosXML.php", true);
+	http_request.open("POST", "../PHP/listaProductosXML.php", true);
 	
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	
@@ -507,7 +507,7 @@ function solicitar_compra()
 	
 	http_request.onreadystatechange = "";
 	
-	http_request.open("POST", "localhost/TiendaOnline/PHP/");
+	http_request.open("POST", "../PHP/");
 	
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	

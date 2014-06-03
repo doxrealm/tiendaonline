@@ -12,7 +12,7 @@ function solicitar_provincias(selectProvincias)
 	
 	http_request.onreadystatechange = function(){ recibe_provincias(selectProvincias) };
 	
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/listaProvincias&MunicipiosXML.php", true);
+	http_request.open("POST", "../PHP/listaProvincias&MunicipiosXML.php", true);
 	
 	http_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	
@@ -82,7 +82,7 @@ function solicitar_municipios(selectProvincias, selectMunicipios)
 	
 	http_request.onreadystatechange = function(){ recibe_municipios(selectProvincias, selectMunicipios) };
 	
-	http_request.open("POST", "http://localhost/TiendaOnline/PHP/listaProvincias&MunicipiosXML.php", true);
+	http_request.open("POST", "../PHP/listaProvincias&MunicipiosXML.php", true);
 	
 	http_request.send();
 }
